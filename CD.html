@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="CD.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Countdown Timer</h1>
+        <form id="countdownForm" onsubmit="startCountdown(event)">
+            <label for="date">Target Date and Time:</label>
+            <input type="datetime-local" id="targetDateTime" required>
+            <button type="submit">Start Countdown</button>
+        </form>
+        <div id="countdownDisplay"></div>
+    </div>
+    <script src="CD.js"></script>
+</body>
+</html>
